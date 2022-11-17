@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+   >
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:elevation="10dp"
+        app:cardElevation="10dp"
+        app:cardCornerRadius="20dp"
+        android:backgroundTint="@color/asosiy_rang"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/corner_color2"
+            android:padding="10dp"
+            >
+
+            <TextView
+                android:id="@+id/item_name"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.7"
+                android:text="@string/app_name"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textAllCaps="false"
+                android:textSize="25sp"
+                android:gravity="top|center"
+                />
+
+            <TextView
+                android:id="@+id/item_number"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="@string/app_name"
+                android:textSize="25sp"
+                android:textAllCaps="false"
+                android:textStyle="normal"
+                android:textColor="@color/white"
+                android:gravity="center"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:id="@+id/item_Dif_Off"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="@string/app_name"
+                    android:textColor="@color/qoshimcha_rang"
+                    android:textStyle="italic"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    android:layout_marginStart="8dp"
+                    android:gravity="center|start"
+                    android:visibility="gone"
+                    />
+
+                <TextView
+                    android:id="@+id/item_Dif_Onn"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="@string/app_name"
+                    android:textColor="#23EC2C"
+                    android:textStyle="italic"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    android:layout_marginStart="8dp"
+                    android:gravity="center|start"
+                    />
+
+                <TextView
+                    android:id="@+id/item_date"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="@string/app_name"
+                    android:textColor="@color/white"
+                    android:textStyle="italic"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    android:gravity="center|end"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</LinearLayout>

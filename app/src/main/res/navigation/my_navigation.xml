@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_navigation"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="uz.salimovdeveloper.valyutakurslari.fragments.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_converterFragment"
+            app:destination="@id/converterFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_valyutaFragment"
+            app:destination="@id/valyutaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/converterFragment"
+        android:name="uz.salimovdeveloper.valyutakurslari.fragments.ConverterFragment"
+        android:label="fragment_converter"
+        tools:layout="@layout/fragment_converter" />
+    <fragment
+        android:id="@+id/valyutaFragment"
+        android:name="uz.salimovdeveloper.valyutakurslari.fragments.ValyutaFragment"
+        android:label="fragment_valyuta"
+        tools:layout="@layout/fragment_valyuta" />
+</navigation>
