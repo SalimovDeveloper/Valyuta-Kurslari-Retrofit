@@ -11,6 +11,7 @@ import retrofit2.Callback
 import retrofit2.Response
 import uz.salimovdeveloper.valyutakurslari.adapters.RvAdapter
 import uz.salimovdeveloper.valyutakurslari.databinding.FragmentValyutaBinding
+import uz.salimovdeveloper.valyutakurslari.models.MyObject
 import uz.salimovdeveloper.valyutakurslari.models.MyValyuta
 import uz.salimovdeveloper.valyutakurslari.retrofit.ApiClient
 
@@ -33,6 +34,7 @@ class ValyutaFragment : Fragment() {
                     if (response.isSuccessful){
                         rvAdapter = RvAdapter(response.body()!!)
                         binding.myRecyc.adapter = rvAdapter
+                        MyObject.valyutaList.addAll(response.body()!!)
                     }
                 }
 
