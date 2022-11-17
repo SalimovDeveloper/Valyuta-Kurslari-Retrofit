@@ -18,13 +18,13 @@ class RvAdapter(var list: List<MyValyuta>) : RecyclerView.Adapter<RvAdapter.Vh>(
             itemRvBinding.itemDifOff.text = myValyuta.Diff
             itemRvBinding.itemDifOnn.text = myValyuta.Diff
 
-            if (itemRvBinding.itemDifOff.text.toString().toFloat() < 0){
-                itemRvBinding.itemDifOff.visibility = View.VISIBLE
-                itemRvBinding.itemDifOff.text = myValyuta.Diff
-            }else {
-                itemRvBinding.itemDifOnn.visibility = View.VISIBLE
-                itemRvBinding.itemDifOnn.text = myValyuta.Diff
-            }
+//            if (itemRvBinding.itemDifOff.text.toString().toFloat() < 0){
+//                itemRvBinding.itemDifOff.visibility = View.VISIBLE
+//                itemRvBinding.itemDifOff.text = myValyuta.Diff
+//            }else {
+//                itemRvBinding.itemDifOnn.visibility = View.VISIBLE
+//                itemRvBinding.itemDifOnn.text = myValyuta.Diff
+//            }
 //
 //            itemRvBinding.itemDiffOn.visibility = View.VISIBLE
 //            itemRvBinding.itemDiffOn.text = myValyuta.Diff
