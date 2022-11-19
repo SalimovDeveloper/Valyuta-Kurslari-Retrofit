@@ -15,7 +15,7 @@ class RvAdapter(var list: List<MyValyuta>) : RecyclerView.Adapter<RvAdapter.Vh>(
             itemRvBinding.itemDate.text = myValyuta.Date
             itemRvBinding.itemNumber.text = myValyuta.Rate + " So'm"
 
-            itemRvBinding.itemDifOff.text = myValyuta.Diff
+            itemRvBinding.itemDifOnn.visibility = View.VISIBLE
             itemRvBinding.itemDifOnn.text = myValyuta.Diff
 
 //            if (itemRvBinding.itemDifOff.text.toString().toFloat() < 0){

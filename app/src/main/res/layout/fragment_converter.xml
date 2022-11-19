@@ -26,6 +26,7 @@
                 android:id="@+id/spinner_1"
                 android:layout_width="match_parent"
                 android:layout_height="30dp"
+                app:chainUseRtl="false"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintBottom_toTopOf="@+id/edt"
                 android:layout_marginBottom="10dp"

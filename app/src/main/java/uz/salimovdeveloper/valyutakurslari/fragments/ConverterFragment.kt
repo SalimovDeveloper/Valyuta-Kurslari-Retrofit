@@ -33,6 +33,14 @@ class ConverterFragment : Fragment() {
         binding.spinner1.adapter=ArrayAdapter<String>(binding.root.context, android.R.layout.simple_list_item_1, countryName())
         binding.spinner2.adapter=ArrayAdapter<String>(binding.root.context, android.R.layout.simple_list_item_1, countryName())
 
+        binding.btnOk.setOnClickListener {
+            val country1 = valyutaList[binding.spinner1.selectedItemPosition]
+            val country2 = valyutaList[binding.spinner2.selectedItemPosition]
+            val country = convert(country2, country1)
+            val summa = binding.edt.text.toString().toFloat()
+            val result = country*summa
+            binding.txtView.text = result.toString()
+        }
 
         return binding.root
     }
@@ -47,4 +55,7 @@ class ConverterFragment : Fragment() {
         return countryList
     }
 
+    fun convert(valyuta: MyValyuta, valyuta2: MyValyuta):Float{
+        return valyuta2.Rate!!.toFloat()/valyuta.Rate!!.toFloat()
+    }
 }
